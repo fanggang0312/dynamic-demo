@@ -1,0 +1,20 @@
+server:
+  port: 8081
+spring:
+  datasource:
+    master:
+      driver-class-name: com.mysql.cj.jdbc.Driver
+      jdbc-url: jdbc:mysql://127.0.0.1:3306/demo?useUnicode=true&characherEncoding=utf-8&useSSL=true&serverTimezone=UTC
+      username: root
+      password: 123456
+    slave:
+      driver-class-name: com.mysql.cj.jdbc.Driver
+      jdbc-url: jdbc:mysql://39.106.225.113:3306/hzfi_zx?useUnicode=true&characherEncoding=utf-8&useSSL=true&serverTimezone=UTC
+      username: hzzx
+      password: hzzx@113
+
+
+
+
+
+
