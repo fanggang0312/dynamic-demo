@@ -13,6 +13,10 @@ spring:
       username: hzzx
       password: hzzx@113
 
+mybatis:
+  mapper-locations: mapper/*.xml
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
 
 
 

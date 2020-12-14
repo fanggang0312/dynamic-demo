@@ -3,11 +3,12 @@ package com.example.dynamicdemo.controller;
 import com.example.dynamicdemo.service.UserService;
 import com.example.dynamicdemo.service.UserService1;
 import lombok.extern.slf4j.Slf4j;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
+
+import javax.annotation.Resource;
 
 /**
  * @Author: fanggang
@@ -18,9 +19,9 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping("/user")
 public class UserContreoller {
 
-    @Autowired
+    @Resource
     private UserService userService;
-    @Autowired
+    @Resource
     private UserService1 userService1;
 
     @GetMapping("/{name}")

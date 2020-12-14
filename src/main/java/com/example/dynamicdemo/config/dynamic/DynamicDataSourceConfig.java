@@ -28,15 +28,13 @@ public class DynamicDataSourceConfig {
     @Bean(DataSourceConstants.DS_KEY_MASTER)
     @ConfigurationProperties(prefix = "spring.datasource.master")
     public DataSource masterDataSource() {
-        DataSource dataSource = DataSourceBuilder.create().build();
-        return dataSource;
+        return DataSourceBuilder.create().build();
     }
 
-    @Bean(DataSourceConstants.DS_KEY_MASTER)
+    @Bean(DataSourceConstants.DS_KEY_SLAVE)
     @ConfigurationProperties(prefix = "spring.datasource.slave")
     public DataSource slaveDataSource() {
-        DataSource dataSource = DataSourceBuilder.create().build();
-        return dataSource;
+        return DataSourceBuilder.create().build();
     }
 
     @Bean
